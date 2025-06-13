@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Page Title</title>
+  	<link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+  	<div class="calculator">
+    	<button onclick="getElementById('first_number').innerHTML = 1">1</button>
+    	<button onclick="getElementById('first_number').innerHTML = 2">2</button>
+    	<button onclick="getElementById('first_number').innerHTML = 3">3</button>
+    	<button onclick="getElementById('first_number').innerHTML = 4">4</button>
+    	<button onclick="getElementById('first_number').innerHTML = 5">5</button>
+    	<button onclick="getElementById('first_number').innerHTML = 6">6</button>
+    	<button onclick="getElementById('first_number').innerHTML = 7">7</button>
+    	<button onclick="getElementById('first_number').innerHTML = 8">8</button>
+    	<button onclick="getElementById('first_number').innerHTML = 9">9</button>
+    	<button onclick="getElementById('first_number').innerHTML = 0">0</button>
+    </div>
+    <div class="operations">
+        <button onclick="getElementById('operation').innerHTML = '+'">+</button>
+        <button onclick="getElementById('operation').innerHTML = '-'">-</button>
+        <button onclick="getElementById('operation').innerHTML = '*'">*</button>
+        <button onclick="getElementById('result').innerHTML = eval(getElementById('first_number').innerHTML + getElementById('operation').innerHTML + getElementById('second_number').innerHTML)">=</button>
+        <button onclick="getElementById('result').innerHTML = 0, getElementById('first_number').innerHTML = 0, getElementById('second_number').innerHTML = 0">Clear</button>
+    </div>
+    <div class="calculator">
+    	<button onclick="getElementById('second_number').innerHTML = 1">1</button>
+    	<button onclick="getElementById('second_number').innerHTML = 2">2</button>
+    	<button onclick="getElementById('second_number').innerHTML = 3">3</button>
+    	<button onclick="getElementById('second_number').innerHTML = 4">4</button>
+    	<button onclick="getElementById('second_number').innerHTML = 5">5</button>
+    	<button onclick="getElementById('second_number').innerHTML = 6">6</button>
+    	<button onclick="getElementById('second_number').innerHTML = 7">7</button>
+    	<button onclick="getElementById('second_number').innerHTML = 8">8</button>
+    	<button onclick="getElementById('second_number').innerHTML = 9">9</button>
+    	<button onclick="getElementById('second_number').innerHTML = 0">0</button>
+    </div>
+    <div class="hidden">
+    	<var id="first_number"></var>
+        <var id="operation"></var>
+        <var id="second_number"></var>
+        <var id="check"></var>
+    </div>
+    <div class="result">
+    	<h1>Total :</h1>
+        <h1 id="result">0</h1>
+    </div>
+  </body>
+</html>
